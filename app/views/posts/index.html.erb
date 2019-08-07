@@ -1,0 +1,15 @@
+<div class="top-wrapper"> 
+    <div class="container">
+         <%= form_for @post, remote: true do |f| %>
+         <p>What did you achieve today? (Ex.It can be as small as "I went to the supermarket")</p>
+           <%= f.text_field :text %>
+           <%= f.submit 'Post' %>
+         <% end %>
+   </div>
+         <div class="contents-row">
+            <ul><%= render @posts %></ul>
+         </div>
+</div>
+
+ 
+

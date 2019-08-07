@@ -1,0 +1,6 @@
+<li>
+  <%= post.text %>
+  <div class="delete">
+  <%= link_to 'delete', post_path(post), method: :delete, remote: true %>
+  </div>
+</li>
